@@ -1,0 +1,147 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    background: url(bg/euro.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.container {
+    top: 0;
+    background-color: rgba(25, 25, 25, 0.3);
+}
+header, main {
+    width: 100%;
+    padding: 20px 10px;
+    margin: 0 auto;
+}
+header{
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    /*box-shadow: 0 0 15px 5px #23b5d3;*/
+    border-bottom: none;
+    backdrop-filter: blur(100px);
+}
+header #title, #description {
+    display: block;
+    max-width: 785px;
+    margin: 20px auto;
+    text-align: center;
+}
+header #title {
+    font-size: 25px;
+}
+header #description, span {
+    font-size: 19px;
+}
+main {
+    width: 100%;
+    padding: 10px;
+    margin: 0 auto;
+    backdrop-filter: blur(15px);
+    position: relative;
+}
+#survey-form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+#survey-form .personal-info label {
+    font-size: 20px;
+    color: #555;
+    margin-left: 3px;
+}
+#survey-form .personal-info  input {
+    display: block;
+    margin: 5px 0;
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    width: 100%;
+    border-radius: 5px;
+    background-color: #F0F4EF;
+}
+.personal input::placeholder {
+    font-size: 14px;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+legend{
+    font-size: 19px;
+    margin: 10px 0;
+    color: #555;
+}
+select {
+    padding: 10px;
+    font-size: 18px;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    color: #555;
+    background-color: #F0F4EF;
+}
+#recommend label, 
+#preferred-improvement label, 
+#recommend input,
+#preferred-improvement input{
+    display: flex;
+    font-size: 19px;
+    color: #344;
+}
+#recommend label, 
+#preferred-improvement label{
+    margin: 15px 8px;
+    font-size: 18px;
+}
+#recommend input,
+#preferred-improvement input{
+    width: 20px;
+    margin-right: 10px;
+    background-color: #F0F4EF;
+}
+textarea, button#submit {
+    padding: 15px;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    resize: none;
+    width: 100%;
+    
+    margin: 15px 0;
+}
+textarea {
+    height: 200px;
+}
+button#submit {
+    background: green;
+    color: #fff;
+    cursor: pointer;
+}
+@media (min-width: 576px) {
+        header, main {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    header, main {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 480px) {
+    form {
+        padding: 2.5rem;
+    }
+}
